@@ -10,6 +10,7 @@ const RegisterSchema= new mongoose.Schema({
         default:
           "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
       },
+      status: {type: String,default: "active"}
 })
 
 const RegisterModel= mongoose.model("User",RegisterSchema)
